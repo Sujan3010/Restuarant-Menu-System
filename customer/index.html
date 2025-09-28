@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resturant Menu System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="hero-section">
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <div class="admin-link">
+                    <a href="../admin/login.html" class="admin-btn">
+                         Admin
+                    </a>
+                </div>
+                
+                <h1 class="hero-title">Famous Sydney Resturant</h1>
+                <p class="hero-subtitle">Exquisite dining experience crafted with passion</p>
+            </div>
+        </div>
+    </header>
+
+    <nav class="menu-nav">
+        <div class="nav-container">
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">All Items</button>
+                <button class="filter-btn" data-category="1">Main Dishes</button>
+                <button class="filter-btn" data-category="2">Side Dishes</button>
+                <button class="filter-btn" data-category="3">Beverages</button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="menu-main">
+        <div class="menu-container">
+            <div id="loading" class="loading-spinner">
+                <div class="spinner"></div>
+                <p>Loading delicious menu...</p>
+            </div>
+            
+            <div id="menuGrid" class="menu-grid" style="display: none;">
+                <!-- Menu items will be loaded here -->
+            </div>
+            
+            <div id="noItems" class="no-items" style="display: none;">
+                <div class="no-items-content">
+                    <span class="no-items-icon">🍽️</span>
+                    <h3>No items found</h3>
+                    <p>Try selecting a different category</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Famous Sydney Resturant</h3>
+                <p>Experience the finest dining with our carefully crafted menu featuring fresh, locally sourced ingredients.</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>📍 123  Street, Sydney City</p>
+                <p>📞 (555) 123-4567</p>
+                <p>✉️ info@famoussydney.com</p>
+            </div>
+            
+            <div class="footer-section">
+                <h4>Hours</h4>
+                <p>Monday - Thursday: 11:00 AM - 10:00 PM</p>
+                <p>Friday - Saturday: 11:00 AM - 11:00 PM</p>
+                <p>Sunday: 12:00 PM - 9:00 PM</p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Famous Sydney Resturant. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
