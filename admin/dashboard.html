@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Famous Sydney Restaurant</title>
+    <link rel="stylesheet" href="stylesadmin1.css">
+</head>
+<body>
+    <header class="admin-header">
+        <div class="header-content">
+            <h1>Admin Dashboard</h1>
+            <div class="header-actions">
+                <a href="../customer/index.html" class="btn btn-secondary">
+                    View Menu
+                </a>
+                <button id="logoutBtn" class="btn btn-danger">
+                     Logout
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="dashboard-main">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Items</h3>
+                <div class="stat-number" id="totalItems">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>Available Items</h3>
+                <div class="stat-number" id="availableItems">0</div>
+            </div>
+            <div class="stat-card">
+                <h3>Categories</h3>
+                <div class="stat-number" id="categoriesCount">0</div>
+            </div>
+        </div>
+
+        <div class="dashboard-actions">
+            <button id="addItemBtn" class="btn btn-primary">
+                <span class="icon">+</span> Add New Menu Item
+            </button>
+        </div>
+
+        <section class="menu-section">
+            <h2>Menu Items</h2>
+            <div id="menuItems" class="menu-items-grid">
+                <!-- Menu items will be loaded here -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Add/Edit Item Modal -->
+   
+
+    <script src="./dashScript.js"></script>
+</body>
+</html>
+
