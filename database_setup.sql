@@ -64,6 +64,18 @@ CREATE TABLE IF NOT EXISTS `menu_items` (
   KEY `category_id` (`category_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Dumping data for table `menu_items`
+--
+
+INSERT INTO `menu_items` (`id`, `name`, `description`, `price`, `category_id`, `image_url`, `is_available`) VALUES
+(13, 'Grilled Ribeye Steak', 'Premium ribeye steak grilled to perfection, served with seasonal vegetables.', 32.99, 1, 'http://localhost/Restuarant-Menu-System/img/ribeye.jpg', 1),
+(14, 'Pan-Seared Salmon', 'Fresh salmon pan-seared with a crispy skin, served with a lemon-dill sauce.', 24.50, 1, 'http://localhost/Restuarant-Menu-System/img/salmon.jpg', 1),
+(15, 'Classic Cheeseburger', 'A juicy beef patty with cheddar cheese, lettuce, tomato, and our special sauce.', 15.99, 1, 'http://localhost/Restuarant-Menu-System/img/burger.jpg', 1),
+(16, 'Garlic Bread', 'Toasted baguette with garlic butter and herbs.', 6.50, 2, 'http://localhost/Restuarant-Menu-System/img/garlic-bread.jpg', 1),
+(17, 'Caesar Salad', 'Crisp romaine lettuce with Caesar dressing, croutons, and Parmesan cheese.', 9.00, 2, 'http://localhost/Restuarant-Menu-System/img/ceaser-salad.jpg', 1),
+(18, 'French Fries', 'Golden crispy french fries.', 4.50, 2, 'http://localhost/Restuarant-Menu-System/img/fries.jpg', 1),
+(19, 'Orange Juice', 'Freshly squeezed orange juice.', 3.00, 3, 'http://localhost/Restuarant-Menu-System/img/orange-juice.jpg', 1);
 
 -- --------------------------------------------------------
 
@@ -85,6 +97,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`) VALUES
+(1, 'admin', '$2y$10$E.qJ4Q/I8a0a3Q3j3j3j3O.y0g/ea.F.qJ4Q/I8a0a3Q3j3j3O.y0'),
 (2, 'admin2', 'admin123');
 
 --
